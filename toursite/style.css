@@ -1,0 +1,411 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: rgb(0, 72, 255);
+  color: #333;
+  margin: 0;
+}
+
+/* Top Navigation Bar */
+.top-bar {
+  background-color: white;
+  padding: 10px 0;
+}
+
+.top-bar nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.top-bar nav ul li {
+  margin: 0 15px;
+}
+
+.top-bar nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-bar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section  */
+.hero-section {
+  background-image: url('images/tour1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.overlay-text {
+  background: none !important;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+  display: none; 
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.subsection {
+  flex: 0 0 100%;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.hero-image {
+  width: 90%;
+  max-height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-btn, .prev {
+  position: absolute;
+  top: 50%;
+  transform: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Midnight Hero Section */
+.midnight-hero-section {
+  padding: 50px 10px;
+  text-align: center;
+  background-color: #222;
+  color: black;
+}
+
+.midnight-hero-section .hero-content img {
+  width: 50%;
+  height: 100vh;
+  margin: 20px auto;
+  display: block;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero-button:hover {
+  background-color: #e6b800;
+}
+
+/* Navigation Sections */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #e9f2f9;
+}
+
+.nav-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.nav-section h2 {
+  color: rgb(0, 110, 255);
+  margin-bottom: 10px;
+}
+
+.nav-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-section ul li {
+  margin-bottom: 8px;
+}
+
+.nav-section ul li a {
+  text-decoration: none;
+  color: rgb(23, 68, 105);
+}
+
+.nav-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Travel Now Section */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+p {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/* Booking Hero */
+.hero {
+  background: url('book.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  padding: 40px;
+  color: white;
+}
+
+.text-section {
+  width: 50%;
+}
+
+.text-section h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.call-text {
+  font-size: 1.1rem;
+}
+
+.phone {
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+.form-section {
+  width: 40%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+}
+
+.form-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e65b2f;
+}
+
+/* Dual Flyer */
+.dual-flyer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.flyer {
+  width: 340px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flyer-left {
+  background: linear-gradient(white, #f2f2f2);
+  color: #003333;
+}
+
+.flyer-right {
+  background: linear-gradient(white, #fff3f0);
+  color: black;
+}
+
+.logo {
+  background-color: #003333;
+  background-image: url('images/tour23.jpeg');
+  color: white;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-offer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-offer h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.main-offer .highlight {
+  color: #f29c12;
+  font-style: italic;
+}
+
+.services {
+  margin-top: 15px;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.services li {
+  margin-bottom: 5px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.image-grid img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.pricing-section {
+  background-color: #003333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.pricing-section h2 {
+  margin: 5px 0 0;
+  font-size: 26px;
+  color: #f29c12;
+}
+
+.additional-services ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.additional-services li {
+  padding: 4px 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
