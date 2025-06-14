@@ -48,7 +48,7 @@
     --gray-shadow: 20px 20px 10px gray;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --max-width: 1580px;
+    --max-width: 1450px;
     --fixed-width: 620px;
 }
 /* Global Styles */
@@ -59,32 +59,167 @@ body {
     color: var(--text-black-900);
     background-color: var(--bg-black-100);
     line-height: 1.6;
+    
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* edit nav header */
 nav{
     display: block;
-    
 }
 
 .nav-header{
     background-color: black;
-    
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 20px;
+    height: 40px;
+    
+    
 }
 .nav-header h1{
-    
-    font-size: 0.5rem;
+    font-size: 1rem;
     color: var(--clr-white);
-    margin: 0;
+    /* margin-left: 20rem; */
     position: absolute;
+    left: 20rem;
+}
+
+
+.nav-header .follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+/* .nav-header .follow .follow-icon{
+    
+} */
+.nav-header .follow .follow-icon i{
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    left: 25rem;
+    
+}
+
+.nav-header .follow .follow-icon i:hover{
+    color: var(--clr-primary-5);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.nav-header .follow .follow-icon .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease;
+}
+
+.nav-header .follow .contact-icon i {
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    left: 25rem;
+}
+.nav-header .login{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 25rem; */
+}
+.nav-header .login a{
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    left: 25rem;
+    top: 0.5rem;
+}
+
+.nav-header .login a:hover{
+    color: var(--main--color);
+    cursor: pointer;
 }
 
 .nav-container{
-    background-color: blue;
-    padding: 5px;
+    width: 100%;
+    background-color: var(--main--color);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.nav-container .logo{
+    margin-left: 1rem;
+}
+.nav-container h1{
+    color: var(--clr-white);
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2px;
+    font-family: 'Clicker Script', cursive;
+}
+.nav-container h1 span{
+    border: 2px solid white;
+    margin-right:0.51rem;
+}
+
+.nav-container .nav-links{
+    /* margin-left: 0rem; */
+    margin-top: 1rem;
+}
+.nav-container .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-container .nav-links ul li{
+    margin-left: 3rem;
+}
+.nav-container .nav-links ul li a{
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.nav-container .nav-links ul li a:hover{
+    color: var(--clr-black);
+    cursor: pointer;
+}
+.nav-container .nav-links ul li a.active{
+    color: red;
+    font-weight: 600;
+}
+
+.nav-container .cart-icon{
+    /* margin-left: 10rem; */
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--clr-white);
+    
+    cursor: pointer;
+}
+.nav-container .cart-icon i{
+    color: var(--clr-white);
+    position: relative;
+}
+
+.nav-container .cart-icon i:hover{
+    color: var(--clr-black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-container .cart-icon .cart-count{
+    
+    margin-top: 1.9rem;
+    color: var(--clr-white);
     
 }
