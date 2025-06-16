@@ -71,7 +71,7 @@ a{
     text-decoration: none;
 }
 
-/* edit nav header */
+/* edit nav header 344 lines */
 nav{
     display: block;
 }
@@ -198,16 +198,16 @@ nav{
     color: var(--clr-black);
     cursor: pointer;
 }
-/* .nav-container .nav-links ul li a.active{
+ .nav-container .nav-links ul li a.active{
     color: red;
     font-weight: 600;
-} */
-
-.nav-links a.active {
-  color: red;
-  font-weight: bold;
-  border-bottom: 2px solid red;
 }
+.nav-container .nav-linksul li a.show-links {
+  display: block;
+}
+
+
+
 
 .nav-container .cart-icon{
     /* margin-left: 10rem; */
