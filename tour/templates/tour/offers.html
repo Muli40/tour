@@ -1,0 +1,84 @@
+{% extends 'tour/base.html' %}
+{% load static %}
+
+{% block title %}Offers{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'style.css' %}" />
+
+<div class="dual-flyer">
+  <!-- LEFT Flyer -->
+  <div class="flyer flyer-left">
+    <div class="logo"></div>
+    <div class="main-offer">
+      <h1><span class="highlight">Travel</span> The World</h1>
+      <ul class="services">
+        <li><strong>Subsidized Flight Price</strong> – Get exclusive airfare deals</li>
+        <li><strong>Food Package</strong> – Inclusive local & international cuisine</li>
+        <li><strong>Touring the Destination</strong> – Guided excursions</li>
+        <li><strong>Hotel</strong> – Comfortable stays in top-rated hotels</li>
+      </ul>
+    </div>
+    <div class="image-grid">
+      <img src="{% static 'tour/images/tour20.jpeg' %}" alt="Air Offer">
+      <img src="{% static 'tour/images/tour21.jpeg' %}" alt="Air Offer">
+      <img src="{% static 'tour/images/tour22.jpeg' %}" alt="Air Offer">
+      <img src="{% static 'tour/images/tour23.jpeg' %}" alt="Air Offer">
+    </div>
+    <div class="pricing-section">
+      <p>Package Starts</p>
+      <h2><del>$790</del></h2>
+    </div>
+    <div class="additional-services">
+      <ul>
+        <li>Passport and Visa</li>
+        <li>Airline Ticketing</li>
+        <li>Hotel Booking</li>
+        <li>Tourist Guide</li>
+        <li>Car Rental Services</li>
+        <li>Up to 50% Discount</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>Book Now: <strong>+000 1234 5678</strong></p>
+    </div>
+  </div>
+
+  <!-- RIGHT Flyer -->
+  <div class="flyer flyer-right">
+    <div class="logo"></div>
+    <div class="main-offer">
+      <h1><span class="highlight">Travel</span> The World</h1>
+      <ul class="services">
+        <li><strong>Subsidized Flight Price</strong> – Get exclusive airfare deals</li>
+        <li><strong>Food Package</strong> – Inclusive local & international cuisine</li>
+        <li><strong>Touring the Destination</strong> – Guided excursions</li>
+        <li><strong>Hotel</strong> – Comfortable stays in top-rated hotels</li>
+      </ul>
+    </div>
+    <div class="image-grid">
+      <img src="{% static 'images/tour20.jpeg' %}" alt="Air Offer">
+      <img src="{% static 'images/tour21.jpeg' %}" alt="Air Offer">
+      <img src="{% static 'images/tour22.jpeg' %}" alt="Air Offer">
+      <img src="{% static 'images/tour23.jpeg' %}" alt="Air Offer">
+    </div>
+    <div class="pricing-section">
+      <p>Package Starts</p>
+      <h2><ins>$690</ins></h2>
+    </div>
+    <div class="additional-services">
+      <ul>
+        <li>Passport and Visa</li>
+        <li>Airline Ticketing</li>
+        <li>Hotel Booking</li>
+        <li>Tourist Guide</li>
+        <li>Car Rental Services</li>
+        <li>Up to 50% Discount</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>Book Now: <strong>+000 1234 5678</strong></p>
+    </div>
+  </div>
+</div>
+{% endblock %}
