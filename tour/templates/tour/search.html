@@ -1,0 +1,43 @@
+{% extends 'tour/base.html' %}
+
+{% block title %}Activities{% endblock %}
+
+{% block content %}
+  <h2>Select Your Town</h2>
+  <select name="towns">
+    <option value="state 1">Towns</option>
+    <option value="state 2">Statehouse</option>
+    <option value="state 3">Sinai</option>
+    <option value="state 4">Waihaki</option>
+    <option value="state 5">Karen</option>
+    <option value="state 6">Lavington</option>
+    <option value="state 7">Goshen</option>
+    <option value="state 8">Lamu</option>
+    <option value="state 9">Huruma</option>
+    <option value="state 10">Tumbuktu</option>
+    <option value="state 11">Jordan</option>
+    <option value="state 12">Indonesia</option>
+  </select>
+
+  <form>
+    <h2>What would you love to do during your vacation here?</h2>
+    <h3>
+      <input type="radio" name="activity" value="hiking"> Hiking<br> 
+      <input type="radio" name="activity" value="diving"> Diving<br>
+      <input type="radio" name="activity" value="swimming"> Swimming<br>
+      <input type="radio" name="activity" value="mountain"> Mountain climbing<br>
+      <input type="radio" name="activity" value="boat"> Boat riding<br>
+      <input type="radio" name="activity" value="features"> Features viewing<br>
+      <input type="radio" name="activity" value="foresting"> Foresting<br>
+      <input type="radio" name="activity" value="skydiving"> Skydiving<br>
+    </h3>
+
+    <label for="comment">Comment:</label><br>
+    <textarea name="comment">Quit spying on me!!</textarea><br>
+
+    <input type="checkbox" name="info" value="yes"> Make sure your Name and ID number are clear<br><br>
+
+    <input type="reset" value="Clear Form">
+    <input type="submit" value="Send Info">
+  </form>
+{% endblock %}
