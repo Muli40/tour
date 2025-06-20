@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --main--color: #4CAF50;
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --smooth-transition-bottom: transition: bottom 0.4s ease, opacity 0.4s ease; /* Smooth transition */;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --gray-shadow: 20px 20px 10px gray;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1450px;
+    --fixed-width: 620px;
+}
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    color: var(--text-black-900);
+    background-color: var(--bg-black-100);
+    line-height: 1.6;
+    
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* edit nav header 344 lines */
+nav{
+    display: block;
+}
+
+.nav-header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    
+    
+}
+.nav-header h1{
+    font-size: 1rem;
+    color: var(--clr-white);
+    
+    position: absolute;
+    left: 10rem;
+}
+
+
+.nav-header .follow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+/* .nav-header .follow .follow-icon{
+    
+} */
+.nav-header .follow .follow-icon i{
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    left: 15rem;
+    
+}
+
+.nav-header .follow .follow-icon i:hover{
+    color: var(--clr-primary-5);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.nav-header .follow .follow-icon .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease;
+}
+
+.nav-header .follow .contact-icon i {
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    left: 15rem;
+}
+.nav-header .login{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 25rem; */
+}
+.nav-header .login a{
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    left: 25rem;
+    top: 0.5rem;
+}
+
+.nav-header .login a:hover{
+    color: var(--main--color);
+    cursor: pointer;
+}
+
+.nav-container{
+    width: 100%;
+    background-color: var(--main--color);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.nav-container .logo{
+    margin-left: 1rem;
+    
+}
+.nav-container h1{
+    color: var(--clr-white);
+    font-size: 2rem;
+    
+    margin-top: 2px;
+    font-family: 'Clicker Script', cursive;
+    position: absolute;
+    left: 10rem;
+}
+.nav-container h1 span{
+    border: 2px solid white;
+    margin-right:0.51rem;
+}
+
+.nav-container .nav-links{
+    /* margin-left: 0rem; */
+    margin-top: 1rem;
+}
+.nav-container .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-container .nav-links ul li{
+    margin-left: 3rem;
+    position: relative;
+    left: 25rem;
+}
+.nav-container .nav-links ul li a{
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.nav-container .nav-links ul li a:hover{
+    color: var(--clr-black);
+    cursor: pointer;
+}
+ .nav-container .nav-links ul li a.active{
+    color: red;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.nav-container .cart-icon{
+    /* margin-left: 10rem; */
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--clr-white);
+    
+    cursor: pointer;
+}
+.nav-container .cart-icon i{
+    color: var(--clr-white);
+    position: relative;
+    
+    left: 25rem;
+}
+
+.nav-container .cart-icon i:hover{
+    color: var(--clr-black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-container .cart-icon .cart-count{
+    
+    color: var(--clr-white);   
+    position: relative;
+    bottom: 1.3rem;
+    left: 23.6rem;
+}
+/* toggle bar */
+.nav-container .toggle-bar{
+    display: none !important;
+    cursor: pointer;
+}
+@media screen and (max-width: 964px) {
+     .nav-container .cart-icon .cart-count{
+        left: 21.2rem;
+    }
+    .nav-container .nav-links ul li{
+        left: 20rem;
+}
+    .nav-container .cart-icon i{
+        left: 22.6rem;
+    }
+    
+    .nav-container .toggle-bar i{
+        font-size: 1.5rem;
+        color: var(--clr-white);
+    }
+  
+    .nav-container .nav-links.active ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--main--color);
+    }
+    .nav-container .nav-links.active ul li{
+        margin-left: 0;
+        padding: 10px 0;
+    }
+    
+}
+@media screen and (max-width: 916px) {
+
+    .nav-header .follow .follow-icon i{
+        left: 10rem;
+    }
+    .nav-header .follow .contact-icon i{
+        left: 10rem;
+    }
+    .nav-header .login a{
+        left: 10rem;
+    }
+     /* Default hidden state */
+    .nav-container .nav-links ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: red;
+    position: relative; /* stay in flow */
+    padding: 0;
+    left: -1rem;
+    margin: 0;
+    list-style: none;
+    }
+
+
+    /* Show links when parent .nav-links has .show-links class */
+    .nav-container .nav-links.show-links ul {
+    max-height: 500px;
+    overflow: visible;
+    display: block;
+    }
+
+
+    .nav-container .nav-links ul li a{
+        font-size: 1rem;
+        color: black;
+        
+    }
+    .nav-container h1{
+        
+        left: 5rem;
+    }
+    .nav-header h1{
+        font-size: 0.8rem;
+        left: 5rem;
+    }
+    .nav-container .cart-icon i{
+        left: 20rem;
+    }
+    
+    .nav-container .cart-icon .cart-count{
+        left: 18.5rem;
+    }
+    
+    .nav-container .toggle-bar{
+        display: block !important;
+        position: relative;
+        left: 20rem;
+        top: 1.5rem;
+    }
+}
+@media screen and (max-width: 504px) {
+    .nav-header h1{
+        left: 1rem;
+    }
+    .nav-header .follow .follow-icon i{
+        left: 6rem;
+        margin-left: 1rem;
+    }
+    .nav-header .follow .contact-icon i{
+        left: 6rem;
+        margin-left: 1rem;
+    }
+    .nav-header .login a{
+        left: 5rem;
+    }
+    .nav-container h1{
+        left: 1rem;
+    }
+    .nav-container .cart-icon i{
+        left: 12rem;
+    }
+    
+    .nav-container .cart-icon .cart-count{
+        left: 10.5rem;
+    }
+    .nav-container .toggle-bar{
+        left: 15rem;
+    }
+}
