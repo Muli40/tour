@@ -3,10 +3,10 @@ from tour import views
 
 urlpatterns = [
     path('', views.home,name='home'),
-    path('toursite/', views.offers,name='toursite'),
+    path('toursite/', views.toursite,name='toursite'),
     path('offers/', views.offers,name='offers'),
-    path('contact/', views.offers,name='contact'),
-    path('search/', views.offers,name='search'),
-    path('activities/', views.offers,name='activities'),
-    path('anit/', views.offers,name='anit'),
+    path('contact/', views.contact,name='contact'),
+    path('search/', views.search,name='search'),
+    path('activities/', views.activities,name='activities'),
+    path('anit/', views.anit,name='anit'),
 ]
