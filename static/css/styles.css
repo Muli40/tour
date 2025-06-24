@@ -366,7 +366,7 @@ nav{
 * Hero Section */
 .hero-contact {
   position: relative;
-  background-image: url('your-image-path.jpg');
+  background-image: url("tour/images/tour1.jpeg");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -536,4 +536,105 @@ footer {
   .footer-section {
     min-width: 100%;
   }
+}
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  margin: 60px auto;
+  max-width: 1200px;
+  background: #f8f9fd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+ .contact-image-large {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.contact-image-large img {
+  width: 75vw;               /* ✅ 75% of the viewport width */
+  max-width: 1000px;         /* ✅ prevents it from getting too big on wide screens */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+.contact-content {
+  flex: 1 1 50%;
+  padding: 40px;
+  background-color: white;
+}
+
+.contact-content h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  width: 100%;
+}
+
+.contact-content input,
+.contact-content textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-content button {
+  background-color: #00bfff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-content button:hover {
+  background-color: #009ddf;
+}
+
+.contact-details {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #444;
+}
+.map-error-link {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.map-error-link img {
+  width: 100%;
+  max-width: 700px;      /* ✅ Limits size on big screens */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;        /* ✅ Centers the image */
+}
+.map-error-link img:hover {
+  transform: scale(1.02);
 }
