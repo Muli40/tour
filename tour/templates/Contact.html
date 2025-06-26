@@ -7,17 +7,25 @@
 <!-- Banner -->
 <section class="banner">
   <h1>Contact</h1>
-</section>
-
-<!-- Google Map -->
-<section class="map-container">
-  <div id="map"></div>
-  <p class="error-message">Oops! Something went wrong.<br>This page didn’t load Google Maps correctly.</p>
-</section>
+</section> 
 
 <!-- Contact Form -->
-<section class="contact-form">
-  <div class="form-left">
+<section class="contact-wrapper">
+  <!-- Left: Image -->
+
+<!-- Map section with clickable image instead of broken map -->
+<section class="map-error-link">
+  <a href="https://www.google.com/maps/place/Buttonwood,+Rosemead,+CA" target="_blank">
+    <img src="{% static 'tour/images/tour101.png' %}" alt="Map location">
+  </a>
+</section>
+
+<section class="contact-image-large">
+    <img src="{% static 'tour/images/tour1.jpeg' %}" alt="Get in Touch">
+  </div>
+
+  <!-- Right: Form -->
+  <div class="contact-content">
     <h2>Get in Touch</h2>
     <form>
       <textarea placeholder="Enter Message"></textarea>
@@ -28,48 +36,61 @@
       <input type="text" placeholder="Enter Subject">
       <button type="submit">Send</button>
     </form>
-  </div>
-  <div class="form-right">
-    <p>🏠 Buttonwood, California, Rosemead, CA 91770</p>
-    <p>📞 +1 255 565 2365 <br>Mon to Fri 9am to 6pm</p>
-    <p>📧 support@colorlib.com</p>
+    <div class="contact-details">
+      <p>🏠 Buttonwood, California, Rosemead, CA 91770</p>
+      <p>📞 +1 255 565 2365 <br>Mon to Fri 9am to 6pm</p>
+      <p>📧 support@colorlib.com</p>
+    </div>
   </div>
 </section>
 
 <!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-left">
-    <div class="logo">🌍 Tralive</div>
-    <p>Land behold it created good saw after she'd Our set living...</p>
-    <div class="social-icons">
-      <a href="#">🔗</a>
-      <a href="#">🔗</a>
-      <a href="#">🔗</a>
+<footer>
+  <div class="footer-container">
+    <!-- Column 1 -->
+    <div class="footer-section">
+      <div class="footer-logo">🌟 Tralive</div>
+      <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning labors nisi.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
-  </div>
-  <div class="footer-links">
-    <div>
+
+    <!-- Column 2 -->
+    <div class="footer-section">
       <h4>Navigation</h4>
-      <p>Home</p>
-      <p>About</p>
-      <p>Services</p>
-      <p>Blog</p>
-      <p>Contact</p>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-    <div>
+
+    <!-- Column 3 -->
+    <div class="footer-section">
       <h4>Services</h4>
-      <p>Blackforest</p>
-      <p>Bodhlubon</p>
-      <p>Rongdhonu</p>
-      <p>Meghrong</p>
+      <ul>
+        <li><a href="#">Blackforest</a></li>
+        <li><a href="#">Bodhubon</a></li>
+        <li><a href="#">Rongdhonu</a></li>
+        <li><a href="#">Meghrong</a></li>
+      </ul>
     </div>
-    <div>
+
+    <!-- Column 4 -->
+    <div class="footer-section">
       <h4>Contact Us</h4>
       <p>76/A, Green Lane, Diamond, NYC</p>
       <p>demoemail@gmail.com</p>
-      <p>+10 (78) 738-9083</p>
+      <p><strong class="highlight-phone">+10 (78) 738-9083</strong></p>
     </div>
   </div>
+
   <div class="footer-bottom">©2025 | Template by Colorlib</div>
 </footer>
 
