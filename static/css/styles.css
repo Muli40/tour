@@ -257,8 +257,12 @@ nav{
         font-size: 1.5rem;
         color: var(--clr-white);
     }
+    .nav-container .nav-links ul li a{
+      font-size: 1rem;
+      color: black;
+  }
   
-    .nav-container .nav-links.active ul{
+    .nav-container .nav-links.nav-links.show-links ul{
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -272,25 +276,44 @@ nav{
         padding: 10px 0;
     }
     .nav-container .nav-links ul {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease;
-        background-color: red;
-        position: relative; /* stay in flow */
-        padding: 0;
-        left: -1rem;
-        margin: 0;
-        list-style: none;
-        }
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%; /* if you want it below the nav bar */
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease;
+    }
     
+    .nav-container .nav-links.show-links ul {
+      max-height: 500px;
+      overflow: visible;
+      display: block;
+    }
     
-        /* Show links when parent .nav-links has .show-links class */
-        .nav-container .nav-links.show-links ul {
-        max-height: 500px;
-        overflow: visible;
-        display: block;
-        }
+    .nav-container .nav-links{
+      position: relative; /* to contain absolute ul */
+      background-color: red;
+      left: 20rem;
+    }
+
+
+    /* Show links when parent .nav-links has .show-links class */
+    .nav-container .nav-links.show-links ul {
+    max-height: 500px;
+    overflow: visible;
+    display: block;
+    } 
     
+    .nav-container .toggle-bar{
+      display: block !important;
+      position: relative;
+      left: 40rem;
+      top: 1.5rem;
+  }
     
 }
 @media screen and (max-width: 916px) {
@@ -305,17 +328,29 @@ nav{
         left: 10rem;
     }
      /* Default hidden state */
-    .nav-container .nav-links ul {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    background-color: red;
-    position: absolute
-        ; /* stay in flow */
-    padding: 0;
-    left: -1rem;
-    margin: 0;
-    list-style: none;
+     .nav-container .nav-links ul {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%; /* if you want it below the nav bar */
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease;
+    }
+    
+    .nav-container .nav-links.show-links ul {
+      max-height: 500px;
+      overflow: visible;
+      display: block;
+    }
+    
+    .nav-container .nav-links{
+      position: relative; /* to contain absolute ul */
+      background-color: red;
+      left: 10rem;
     }
 
 
@@ -330,7 +365,6 @@ nav{
     .nav-container .nav-links ul li a{
         font-size: 1rem;
         color: black;
-        
     }
     .nav-container h1{
         
@@ -351,11 +385,11 @@ nav{
     .nav-container .toggle-bar{
         display: block !important;
         position: relative;
-        left: 20rem;
+        left: 30rem;
         top: 1.5rem;
     }
 }
-@media screen and (max-width: 504px) {
+@media screen and (max-width: 524px) {
     .nav-header h1{
         left: 1rem;
     }
@@ -382,6 +416,31 @@ nav{
     }
     .nav-container .toggle-bar{
         left: 15rem;
+    }
+     /* Default hidden state */
+     .nav-container .nav-links ul {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%; /* if you want it below the nav bar */
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease;
+    }
+    
+    .nav-container .nav-links.show-links ul {
+      max-height: 500px;
+      overflow: visible;
+      display: block;
+    }
+    
+    .nav-container .nav-links{
+      position: relative; /* to contain absolute ul */
+      background-color: red;
+      left: -5rem;
     }
 }
 * Hero Section */
