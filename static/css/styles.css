@@ -363,88 +363,6 @@ nav{
         left: 15rem;
     }
 }
-* Hero Section */
-.hero-contact {
-  position: relative;
-  background-image: url("tour/images/tour1.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-contact h1 {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-}
-
-/* Google Maps Error Box */
-.map-section {
-  background: #f7f7f7;
-  text-align: center;
-  padding: 60px 20px;
-  color: #666;
-}
-
-.map-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-/* Contact Form & Info Section */
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 60px 5%;
-  background-color: #fff;
-}
-
-.contact-form {
-  flex: 1;
-  min-width: 300px;
-  margin-right: 5%;
-}
-
-.contact-form textarea,
-.contact-form input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.contact-form button {
-  background-color: #003cff;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Contact Details */
-.contact-info {
-  flex: 1;
-  min-width: 250px;
-  margin-top: 30px;
-}
-
-.contact-info p {
-  margin: 10px 0;
-}
-
-.contact-info i {
-  margin-right: 10px;
-  color: #ffc107;
-}
 
 /* Footer */
 footer {
@@ -537,41 +455,61 @@ footer {
     min-width: 100%;
   }
 }
+/* Top full-width contact image */
+.top-contact-image {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.top-contact-image img {
+  width: 100%;
+  height: 100%;                   /* 👈 This makes it 75% of screen height */
+  object-fit: cover;              /* 👈 Ensures it fills the space cleanly */
+  border-radius: 0;               /* 👈 Optional: removes rounded edges for banner feel */
+  box-shadow: none;               /* 👈 Optional: remove shadow for full-banner look */
+  display: block;
+}
+
 .contact-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  min-height: 500px;
-  margin: 60px auto;
+  flex-wrap: wrap;         /* allows wrapping if screen is small */
+  justify-content: space-between;
+  gap: 20px;               /* spacing between image and form */
   max-width: 1200px;
-  background: #f8f9fd;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
- .contact-image-large {
-  display: flex;
-  justify-content: center;
-  margin: 60px 0;
-}
-
-.contact-image-large img {
-  width: 75vw;               /* ✅ 75% of the viewport width */
-  max-width: 1000px;         /* ✅ prevents it from getting too big on wide screens */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-.contact-content {
-  flex: 1 1 50%;
+  margin: 60px auto;
   padding: 40px;
-  background-color: white;
+  background-color: #f8f9fd;
+  border-radius: 12px;
 }
 
+/* Left: location image */
+.location-image {
+  flex: 1 1 45%;            /* takes about 45% of space */
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.location-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Right: form */
+.contact-content {
+  flex: 1 1 50%;            /* takes about 50% of space */
+  padding: 20px;
+  background-color: hsl(240, 3%, 94%);
+  border-radius: 12px;
+}
 .contact-content h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
+  margin-bottom: 25px;
+  font-size: 32px;
   color: #2c3e50;
 }
 
@@ -616,25 +554,4 @@ footer {
   margin-top: 30px;
   font-size: 14px;
   color: #444;
-}
-.map-error-link {
-  text-align: center;
-  margin: 60px auto;
-  max-width: 1000px;
-  padding: 0 20px;
-}
-
-.map-error-link img {
-  width: 100%;
-  max-width: 700px;      /* ✅ Limits size on big screens */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;        /* ✅ Centers the image */
-}
-.map-error-link img:hover {
-  transform: scale(1.02);
 }

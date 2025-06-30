@@ -9,23 +9,24 @@
   <h1>Contact</h1>
 </section> 
 
-<!-- Contact Form -->
-<section class="contact-wrapper">
-  <!-- Left: Image -->
-
-<!-- Map section with clickable image instead of broken map -->
-<section class="map-error-link">
-  <a href="https://www.google.com/maps/place/Buttonwood,+Rosemead,+CA" target="_blank">
-    <img src="{% static 'tour/images/tour101.png' %}" alt="Map location">
-  </a>
+<!-- Top Full-Width Contact Image -->
+<section class="top-contact-image">
+  <img src="{% static 'tour/images/tour1.jpeg' %}" alt="Get in Touch">
 </section>
 
-<section class="contact-image-large">
-    <img src="{% static 'tour/images/tour1.jpeg' %}" alt="Get in Touch">
+<!-- Side-by-Side: Location Image + Contact Form -->
+<section class="contact-wrapper">
+  
+  <!-- Left: Location Image -->
+  <div class="location-image">
+    <a href="https://www.google.com/maps/place/Buttonwood,+Rosemead,+CA" target="_blank">
+      <img src="{% static 'tour/images/tour101.png' %}" alt="Map location">
+    </a>
   </div>
+  </section>
 
-  <!-- Right: Form -->
-  <div class="contact-content">
+  <!-- Right: Contact Form and Info -->
+<section><div class="contact-content">
     <h2>Get in Touch</h2>
     <form>
       <textarea placeholder="Enter Message"></textarea>
@@ -42,6 +43,7 @@
       <p>📧 support@colorlib.com</p>
     </div>
   </div>
+
 </section>
 
 <!-- Footer Section -->
