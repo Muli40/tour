@@ -567,7 +567,7 @@ footer {
 
 /* Left: location image */
 .location-image {
-  flex: 1 1 70%;            /* takes about 70% of space */
+  flex: 1 1 10%;            /* takes about 70% of space */
   display: flex;
   align-items: stretch;
   justify-content: center;
