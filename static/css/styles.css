@@ -401,6 +401,14 @@ nav{
         left: 6rem;
         margin-left: 1rem;
     }
+    .nav-container .nav-links {
+      left: 0;                  /* Stick to the left edge */
+    }
+    
+    .nav-container .nav-links.show-links {
+      left: 0;
+    }
+    
     .nav-header .login a{
         left: 5rem;
     }
@@ -429,17 +437,29 @@ nav{
       overflow: hidden;
       max-height: 0;
       transition: max-height 0.5s ease;
+   
+      background: #333;         /* Same dark bg for the container if needed */
+   
+    }
+    .nav-container .nav-links.show-links {
+      background-color: green;
+    }
+   
+    .nav-container .nav-links.show-links ul li {
+      width: 100%;              /* li takes full width */
+      background-color: #333;   /* Example dark background for each link */
     }
     
-    .nav-container .nav-links.show-links ul {
-      max-height: 500px;
-      overflow: visible;
-      display: block;
+    .nav-container .nav-links.show-links ul li a {
+      display: block;           /* Make link fill the li */
+      width: 100%;
+      padding: 12px 20px;       /* Spacing inside the link */
+      color: #fff;              /* White text */
     }
     
     .nav-container .nav-links{
       position: relative; /* to contain absolute ul */
-      background-color: red;
+      
       left: -5rem;
     }
 }
