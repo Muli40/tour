@@ -1,41 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
+    <!-- Main Page Content -->
+{% block title %}<title>Home</title>{% endblock title %}
+{% block content %}
+<section class="home">
+    <div class="home-section">
+        
+        <div class="image-content">
+            <img src="{% static 'images/t1.avif' %}" alt="hero image" class="hero-image">
+            
+        </div>
+        <div class="text-content">
+            <h1>Explore the World</h1>
+            <p>Discover new places and create unforgettable memories with our travel agency.</p>
+            {% comment %} <a href="{% url 'destination' %}" class="btn">Explore Destinations</a> {% endcomment %}
+        </div>
+    </div>
+</section>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="{% static 'app.js' %}"></script>
+{% endblock content %}
 
-    {% comment %} <title>{% block title %}Tour Site{% endblock %}</title> {% endcomment %}
-
-    <!-- External Styles -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- JS (like jQuery) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <!-- Message Display -->
-    {% if messages %}
-    <ul class="messages">
-        {% for message in messages %}
-            <li class="{{ message.tags }}">{{ message }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-
-    <!-- Navigation/Header -->
     
 
-    <!-- Main Page Content -->
-    {% block content %}
-    {% endblock content %}
 
-    <!-- JS -->
-    <script src="{% static 'js/app.js' %}"></script>
-</body>
-</html>
